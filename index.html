@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css" />
+
+		<title>Harry Potter</title>
+	</head>
+	<body>
+		<h1>Harry Potter Characters</h1>
+		<button id="get-data-online">Get Online Data</button>
+		<fieldset>
+			<legend>Filter settings</legend>
+			<div>
+				<p>
+					House:
+					<select id="houses" class="houses"></select>
+				</p>
+				<div id="ancestry"></div>
+			</div>
+		</fieldset>
+		<main>
+			<article>
+				<div id="characters"></div>
+			</article>
+            <div id="pagination"></div>
+		</main>
+		<footer>
+			<div class="copyright">
+				<span style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: smaller">&copy;</span>
+				<script>
+					document.write(new Date().getFullYear());
+				</script>
+				- Luc Stienne
+			</div>
+		</footer>
+		<script src="js/datafile.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>

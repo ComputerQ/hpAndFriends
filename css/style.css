@@ -1,0 +1,210 @@
+@font-face {
+	font-family: MagicSchool;
+	src: url(../fonts/MagicSchool.ttf);
+}
+@font-face {
+	font-family: Lumoslatino;
+	src: url(../fonts/NightGhost.otf);
+}
+
+:root {
+	--clear: wheat;
+	--not-so-clear: rgb(245, 222, 179);
+	--not-so-dark: rgb(124, 124, 124);
+	--dark: rgb(30, 30, 30);
+	--very-dark: rgb(15, 15, 15);
+}
+
+body {
+	background-color: rgb(15, 15, 15);
+	color: wheat;
+	font-family: "Lumoslatino", Verdana;
+	font-size: 1.2rem;
+	font-weight: lighter;
+	text-shadow: 2px 2px 4px rgba(255, 202, 202, 0.8);
+	margin: 0;
+	padding: 0;
+	cursor: url(https://cur.cursors-4u.net/others/oth-3/oth265.cur), auto !important;
+}
+
+h1 {
+	font-family: "MagicSchool", Verdana;
+	color: wheat;
+	font-weight: lighter;
+	font-size: 4rem;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+button,
+.houses {
+	color: wheat;
+	font-family: "Lumoslatino", Verdana;
+	font-size: 1.2rem;
+	border: 1px solid var(--clear);
+	background-color: var(--dark);
+	height: 60px;
+	border-radius: 5px;
+	text-shadow: 2px 2px 4px rgba(255, 202, 202, 0.8);
+	box-shadow: 2px 2px 4px rgba(245, 222, 179, 0.5);
+	margin: 10px;
+}
+
+option, label, button, .houses {
+	cursor: url(https://cur.cursors-4u.net/user/use-1/use160.cur), auto !important;
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+article {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	width: 80%;
+}
+
+fieldset {
+	border: 1px solid var(--clear);
+	border-radius: 5px;
+	margin: 0 auto;
+	padding: 7px;
+	width: 80%;
+	box-shadow: 2px 2px 4px rgba(245, 222, 179, 0.5);
+}
+
+#get-data-online {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 auto;
+	margin-top: 30px;
+	height: 40px;
+}
+
+form {
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+	display: grid;
+	place-items: center;
+	grid-template-columns: auto 1fr;
+	width: fit-content;
+}
+
+#ancestry label {
+	margin: 0 20px 0 0;
+}
+
+input[type="radio"] {
+	margin: 10px;
+}
+
+input[type="radio"]:after {
+	width: 15px;
+	height: 15px;
+	border-radius: 15px;
+	top: -2px;
+	left: -1px;
+	position: relative;
+	background-color: var(--not-so-clear);
+	content: "";
+	display: inline-block;
+	visibility: visible;
+	border: 2px solid var(--not-so-clear);
+	box-shadow: 2px 2px 4px rgba(245, 222, 179, 0.5);
+	cursor: url(https://cur.cursors-4u.net/user/use-1/use160.cur), auto !important;
+}
+
+input[type="radio"]:checked:after {
+	width: 15px;
+	height: 15px;
+	border-radius: 15px;
+	top: -2px;
+	left: -1px;
+	position: relative;
+	background-color: var(--not-so-dark);
+	content: "";
+	display: inline-block;
+	visibility: visible;
+}
+
+footer {
+	position: absolute;
+	top: 8px;
+	right: 20px;
+	text-align: right;
+	font-size: 0.8rem;
+}
+
+#characters {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.character {
+	flex: 1 1 content;
+	min-width: 200px;
+	max-width: 200px;
+	margin: 10px;
+	padding: 3px;
+	border: 1px solid black;
+	border-radius: 5px;
+	transition: transform 0.5s ease;
+	background-color: var(--dark);
+	box-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5);
+	opacity: 0.9;
+	font-size: 1.2rem;
+}
+
+.character:hover {
+	transform: scale(1.1);
+	opacity: 1;
+	cursor: url(https://cur.cursors-4u.net/others/oth-3/oth267.cur), auto !important;
+}
+
+.character .acteur {
+	font-size: 1rem;
+}
+
+article img {
+	height: 7em;
+	margin-top: 1em;
+	border-radius: 0.5em;
+	border: 1px solid var(--not-so-clear);
+	box-shadow: 2px 2px 4px rgba(245, 222, 179, 0.5);
+}
+
+.gryffindor {
+	border: 1px solid rgb(116, 0, 0);
+	box-shadow: 2px 2px 4px rgba(116, 0, 0, 1);
+}
+
+.slytherin {
+	border: 1px solid rgb(42, 98, 61);
+	box-shadow: 2px 2px 4px rgba(42, 98, 61, 1);
+}
+
+.hufflepuff {
+	border: 1px solid rgb(255, 219, 0);
+	box-shadow: 2px 2px 4px rgba(255, 219, 0, 1);
+}
+
+.ravenclaw {
+	border: 1px solid rgb(93, 0, 139);
+	box-shadow: 2px 2px 4px rgba(93, 0, 139, 1);
+}
+
+.noHouse {
+	border: 1px solid rgb(255, 80, 0);
+	box-shadow: 2px 2px 4px rgba(255, 80, 0, 1);
+}
